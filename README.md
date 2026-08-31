@@ -15,7 +15,7 @@ A Streamlit dashboard provides business-facing KPIs and visualizations on top of
 
 ## Architecture
 
-## 5. Streamlit Dashboard
+## 2. Streamlit Dashboard
 
 ![Dashboard](Images/dashboard.png)
 
@@ -96,7 +96,7 @@ Examples:
 - `mart_review_insights`
 
 ## Orchestration with Apache Airflow
-## 2. Airflow Orchestration
+## 3. Airflow Orchestration
 
 ![Airflow](Images/airflow.png)
 
@@ -137,7 +137,7 @@ This orchestration removes the need to manually execute each pipeline step in se
 
 ## AI Capability 1 — LLM Review Enrichment
 
-## 3. RAG — Chat with Zomato Reviews
+## 4. RAG — Chat with Zomato Reviews
 
 ![RAG](Images/rag.png)
 
@@ -171,7 +171,7 @@ The dbt model `mart_review_insights.sql` combines the enriched review informatio
 
 ## AI Capability 2 — RAG
 
-## 4. Text-to-SQL
+## 5. Text-to-SQL
 
 ![Text-to-SQL](Images/text_to_sql.png)
 
