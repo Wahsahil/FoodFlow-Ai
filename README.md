@@ -254,6 +254,26 @@ This creates the analytics serving layer:
 Snowflake MARTS → Streamlit Dashboard
 ```
 
+## 1. Zomato Dataset
+
+![Zomato Dataset](Images/zomato_dataset.png)
+
+## 2. Airflow Orchestration
+
+![Airflow](Images/airflow.png)
+
+## 3. RAG — Chat with Zomato Reviews
+
+![RAG](Images/rag.png)
+
+## 4. Text-to-SQL
+
+![Text-to-SQL](Images/text_to_sql.png)
+
+## 5. Streamlit Dashboard
+
+![Dashboard](Images/dashboard.png)
+
 ## Technology Stack
 
 | Area | Technology |
