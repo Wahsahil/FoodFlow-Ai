@@ -1,0 +1,13 @@
+zomato:
+  outputs:
+    dev:
+      account: SF25657.ap-southeast-7.aws
+      database: ZOMATO
+      password: Sahilbebo24242424
+      role: DBT_ROLE
+      schema: STAGING
+      threads: 8
+      type: snowflake
+      user: SAHIL24
+      warehouse: ZOMATO_WH
+  target: dev
