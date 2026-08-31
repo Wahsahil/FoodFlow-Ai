@@ -1,4 +1,7 @@
 # FoodFlow AI
+## 1. Zomato Dataset
+
+![Zomato Dataset](Images/zomato_dataset.png)
 
 An end-to-end **Data Engineering + AI analytics platform** for a Zomato-style food delivery dataset.
 
@@ -11,6 +14,10 @@ The project ingests raw data into Amazon S3, loads it into Snowflake, transforms
 A Streamlit dashboard provides business-facing KPIs and visualizations on top of the Gold/MART layer.
 
 ## Architecture
+
+## 5. Streamlit Dashboard
+
+![Dashboard](Images/dashboard.png)
 
 ```text
 Zomato Dataset
@@ -89,6 +96,9 @@ Examples:
 - `mart_review_insights`
 
 ## Orchestration with Apache Airflow
+## 2. Airflow Orchestration
+
+![Airflow](Images/airflow.png)
 
 The Airflow DAG is:
 
@@ -127,6 +137,10 @@ This orchestration removes the need to manually execute each pipeline step in se
 
 ## AI Capability 1 — LLM Review Enrichment
 
+## 3. RAG — Chat with Zomato Reviews
+
+![RAG](Images/rag.png)
+
 `ai/enrich_reviews.py` reads customer reviews from Snowflake and sends them to Gemini.
 
 For each review it produces:
@@ -156,6 +170,10 @@ Snowflake AI table
 The dbt model `mart_review_insights.sql` combines the enriched review information with staging review data and produces aggregated review insights.
 
 ## AI Capability 2 — RAG
+
+## 4. Text-to-SQL
+
+![Text-to-SQL](Images/text_to_sql.png)
 
 The RAG application is implemented in:
 
@@ -254,25 +272,6 @@ This creates the analytics serving layer:
 Snowflake MARTS → Streamlit Dashboard
 ```
 
-## 1. Zomato Dataset
-
-![Zomato Dataset](Images/zomato_dataset.png)
-
-## 2. Airflow Orchestration
-
-![Airflow](Images/airflow.png)
-
-## 3. RAG — Chat with Zomato Reviews
-
-![RAG](Images/rag.png)
-
-## 4. Text-to-SQL
-
-![Text-to-SQL](Images/text_to_sql.png)
-
-## 5. Streamlit Dashboard
-
-![Dashboard](Images/dashboard.png)
 
 ## Technology Stack
 
